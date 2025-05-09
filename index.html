@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="shortcut icon" href="./images/my favicon.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .header-bar {
+            justify-content: center;
+            background: #000b15;
+            box-shadow: #fff;
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .my-icon{
+        position: absolute;
+        padding: 17px;
+        padding-left: 50px;
+
+        }
+
+        html,body {
+            scroll-behavior: smooth;
+        }
+
+        .menu {
+            
+        }
+         
+        .menu-items{
+            display: flex;
+            flex-direction: row;
+            text-align: right;
+            color: #000b15;
+            gap: 30px;
+            list-style: none;
+            justify-content: flex-end;
+            padding-top: 40px;
+            padding-right: 70px;
+            padding-bottom: 30px;
+        }
+
+        .nav-items{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .nav-items:hover{
+            background: #fff;
+            color: #000b15;
+            border: solid 1px #fff;
+            border-radius: 15px;
+            padding: 6px;
+        }
+
+        #call-me {
+            background: #000b15;
+            color: #000b15;
+        }
+
+        .footer{
+            color: #000b15;
+            background: #fff;
+            text-align:  center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-bar">
+            <div class="my-icon">
+                <a href=""><img src="./images/my favicon.jpg" style="border-radius: 50px;" alt="CKP icon" width="50px"></a>
+            </div>
+            <div >
+                <ul class="menu">
+                    <nav class="menu-items">
+                        <a href="#Home" class="nav-items"><li>Accueil</li></a>
+                        <a href="#about" class="nav-items"><li>A propos</li></a>
+                        <a href="#mycompetences" class="nav-items"><li>Compétences</li></a>
+                        <a href="#realisations" class="nav-items"><li>Nos réalisations</li></a>
+                        <a href="#call-me" class="nav-items"><li>Nous Contacter</li></a>
+                    </nav>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+   <div class="slider" id="Home">
+        <img src="./images/19799598-main-d-homme-d-affaires-tactile-avec-code-html-et-programmation-sur-ordinateur-portable-a-ecran-code-informatique-de-developpement-de-programmeur-technologie-de-codage-de-conception-web-d.jpg" alt="" class="slider-background">
+        <div class="slider-content">
+            <h1>Charles Yaovi KPALIKA</h1>
+            <p>Etudiant en développement Web et mobile</p>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div style="max-width: 1280px;">
+            <div>
+                <div style="text-align: center; color: #000b15; margin-bottom: 0;">
+                    <h2 >A propos de moi</h2>
+                </div>
+                <div style="display: flex; padding-left: 15%; padding-top: 0; font-size: 1.3rem;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quasi rerum, culpa voluptatibus eos minus, quidem possimus labore dolorem esse velit nisi quaerat pariatur perferendis recusandae vitae quisquam necessitatibus ad.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section dark" id="mycompetences">
+        <div class="boxed text-center">
+            <h2 >Découvrez mes compétences</h2>
+        </div>
+
+        <div class="flex">
+            <div class="skill">
+                <img src="./images/Figma-logo.svg">
+                <h3>Figma</h3>
+            </div>
+            <div class="skill">
+                <img src="./images/HTML5_logo.png">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill">
+                <img src="./images/Logo CSS.png">
+                <h3>CSS</h3>
+            </div>
+            
+            <div class="skill">
+                <img src="./images/Java_Logo.png">
+                <h3>Java</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section1" id="realisations">
+        <div class="text-center">
+            <h2 >Mes réalisation </h2>
+        </div>
+        <div class="img-realisation" >                   
+            <img src="./images/figm.png" width="300px">                
+            <img src="./images/figma.jpg" width="300px">
+            <img src="./images/site HTML & CSS .jpg" width="300px">                    
+        </div>
+    </div>
+
+
+    <div class="section" id="call-me">
+        <div class="boxed text-center">
+            <h2 style="color: #fff;"> Contacter moi</h2>
+        </div>
+
+        <div class="flex">
+            <div class="contact">
+                <span class="material-icons icon">mail</span>
+                <span class="label"><b>E-mail</b></span>
+                <span class="value"><a href="mailto:charlesyaovikp@gmail.com">charlesyaovikp@gmail.com</a></span>
+            </div>
+            <div class="contact">
+                <span class="material-icons icon">call</span>
+                <span class="label"><b>Telephone</b></span>
+                <span class="value"><a href="tel:+228 93 72 83 19">+228 93 72 83 19</a></span>
+            </div>
+            <div class="contact">
+                <span class="material-icons icon">mail</span>
+                <span class="label"><b>linkedln</b></span>
+                <span class="value"><a href="www.linkedin.com/in/charles-yaovi-kpalika-81847a344">Charleskp</a></span>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="footer">
+        Powered and designed by 
+        <a href="mailto:charlesyaovikp@gmail.com">charlesyaovikp@gmail.com</a>
+    </div>
+</footer>
+
+</body>
+</html>
